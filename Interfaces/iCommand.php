@@ -8,5 +8,14 @@
 
 interface iCommand
 {
+    /**
+     * Invoke a command
+     * @return mixed
+     */
+    public function __invoke();
 
+    /**
+     * @return \mhndev\OOPMail\Interfaces\iProtocol
+     */
+    public function getProtocol();
 }

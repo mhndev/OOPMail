@@ -7,7 +7,23 @@
  */
 namespace mhndev\OOPMail\Interfaces;
 
+use iCommand;
+
 interface iProtocol
 {
+    /**
+     * @param iCommand $command
+     * @return mixed
+     */
+    public function execute(iCommand $command);
 
+    /**
+     * @return array (array of string)
+     */
+    public function getCommands();
+
+    /**
+     * @return boolean
+     */
+    public function hasCommand();
 }
