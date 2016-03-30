@@ -1,1 +1,1 @@
-**Simple and Light Object Oriented Package to send Email**
+**Simple and Light Object Oriented Mail Client Package**
