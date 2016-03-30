@@ -23,7 +23,8 @@ interface iProtocol
     public function getCommands();
 
     /**
-     * @return boolean
+     * @param string $command
+     * @return bool
      */
-    public function hasCommand();
+    public function hasCommand($command);
 }
