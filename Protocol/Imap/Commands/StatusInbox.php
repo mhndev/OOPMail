@@ -8,7 +8,23 @@
 
 namespace mhndev\OOPMail\Protocol\Imap\Commands;
 
-class StatusInbox
+class StatusInbox implements \iCommand
 {
 
+    /**
+     * Invoke a command
+     * @return mixed
+     */
+    public function __invoke()
+    {
+        // TODO: Implement __invoke() method.
+    }
+
+    /**
+     * @return \mhndev\OOPMail\Interfaces\iProtocol
+     */
+    public function getProtocol()
+    {
+        // TODO: Implement getProtocol() method.
+    }
 }

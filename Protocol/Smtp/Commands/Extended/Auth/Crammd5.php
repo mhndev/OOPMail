@@ -8,12 +8,26 @@
 
 namespace mhndev\OOPMail\Protocol\Smtp\Commands\Extended\Auth;
 
-use mhndev\OOPMail\Transport\Smtp;
-
 /**
  * Performs CRAM-MD5 authentication
  */
-class Crammd5 extends Smtp
+class Crammd5 implements \iCommand
 {
 
+    /**
+     * Invoke a command
+     * @return mixed
+     */
+    public function __invoke()
+    {
+        // TODO: Implement __invoke() method.
+    }
+
+    /**
+     * @return \mhndev\OOPMail\Interfaces\iProtocol
+     */
+    public function getProtocol()
+    {
+        // TODO: Implement getProtocol() method.
+    }
 }

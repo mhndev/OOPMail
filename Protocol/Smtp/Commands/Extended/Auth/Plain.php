@@ -8,11 +8,26 @@
 
 namespace mhndev\OOPMail\Protocol\Smtp\Commands\Extended\Auth;
 
-use mhndev\OOPMail\Transport\Smtp;
 /**
  * Performs PLAIN authentication
  */
-class Plain extends Smtp
+class Plain implements \iCommand
 {
 
+    /**
+     * Invoke a command
+     * @return mixed
+     */
+    public function __invoke()
+    {
+        // TODO: Implement __invoke() method.
+    }
+
+    /**
+     * @return \mhndev\OOPMail\Interfaces\iProtocol
+     */
+    public function getProtocol()
+    {
+        // TODO: Implement getProtocol() method.
+    }
 }
