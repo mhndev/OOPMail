@@ -1,4 +1,6 @@
 <?php
+use mhndev\OOPMail\Interfaces\iProtocol;
+
 /**
  * Created by PhpStorm.
  * User: majid
@@ -10,12 +12,30 @@ interface iCommand
 {
     /**
      * Invoke a command
+     * @param iProtocol $protocol
      * @return mixed
      */
-    public function __invoke();
+    public function __invoke(iProtocol $protocol);
 
     /**
-     * @return \mhndev\OOPMail\Interfaces\iProtocol
+     * @param string $value
+     * @return $this
+     */
+    public function expect($value = null);
+
+    /**
+     * @return string
+     */
+    public function getResponse();
+
+
+    /**
+     * @return boolean
+     */
+    public function isOk();
+
+    /**
+     * @return iProtocol
      */
     public function getProtocol();
 }

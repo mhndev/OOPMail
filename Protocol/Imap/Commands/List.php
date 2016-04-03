@@ -8,23 +8,20 @@
 
 namespace mhndev\OOPMail\Protocol\Imap\Commands;
 
-class ListCommand implements \iCommand
+use mhndev\OOPMail\Interfaces\iProtocol;
+use mhndev\OOPMail\Protocol\AbstractCommand;
+
+class ListCommand extends AbstractCommand
 {
 
     /**
      * Invoke a command
+     * @param iProtocol $protocol
+     * @param string|null $expect
      * @return mixed
      */
-    public function __invoke()
+    public function __invoke(iProtocol $protocol, $expect = null)
     {
         // TODO: Implement __invoke() method.
-    }
-
-    /**
-     * @return \mhndev\OOPMail\Interfaces\iProtocol
-     */
-    public function getProtocol()
-    {
-        // TODO: Implement getProtocol() method.
     }
 }

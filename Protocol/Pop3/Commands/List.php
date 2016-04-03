@@ -7,29 +7,25 @@
  */
 
 namespace mhndev\OOPMail\Protocol\Pop3\Commands;
+use mhndev\OOPMail\Interfaces\iProtocol;
+use mhndev\OOPMail\Protocol\AbstractCommand;
 
 /**
  * @Todo change class name to List in php7 cause php 5 doesn't support use of keywords as name
  * Class ListCommand
  * @package mhndev\OOPMail\Protocol\Pop3\Commands
  */
-class ListCommand implements \iCommand
+class ListCommand extends AbstractCommand
 {
 
     /**
      * Invoke a command
+     * @param iProtocol $protocol
+     * @param string|null $expect
      * @return mixed
      */
-    public function __invoke()
+    public function __invoke(iProtocol $protocol, $expect = null)
     {
         // TODO: Implement __invoke() method.
-    }
-
-    /**
-     * @return \mhndev\OOPMail\Interfaces\iProtocol
-     */
-    public function getProtocol()
-    {
-        // TODO: Implement getProtocol() method.
     }
 }

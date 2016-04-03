@@ -30,7 +30,6 @@ abstract class AbstractProtocol implements iProtocol
      */
     const TIMEOUT_CONNECTION = 30;
 
-
     /**
      * Hostname or IP address of remote server
      * @var string
@@ -59,6 +58,16 @@ abstract class AbstractProtocol implements iProtocol
      * @var resource
      */
     protected $socket;
+
+    /**
+     * @var array of supporting commands
+     */
+    protected $commands;
+
+    /**
+     * @var array of executed commands
+     */
+    protected $executed;
 
     /**
      * AbstractProtocol constructor.
